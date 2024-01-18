@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/231607c497.js" crossorigin="anonymous"></script>
+
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    :root {
+      --violet: hsl(257, 40%, 49%);
+      --soft-magenta: hsl(300, 69%, 71%);
+      --white: hsl(0, 0%, 100%);
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background-image: url(./images/bg-desktop.svg);
+      background-color: var(--violet);
+      background-repeat: no-repeat;
+      background-size: contain;
+      font-weight: 400;
+    }
+
+    .container {
+      max-width: 1350px;
+      margin: auto;
+      min-height: 100vh;
+      padding: 3rem;
+    }
+
+
+    .wrapper {
+      display: grid;
+      gap: 3rem;
+      place-content: center;
+      min-height: 100vh;
+    }
+
+    .main {
+      display: flex;
+      gap: 3rem;
+    }
+
+    .content {
+      color: var(--white);
+    }
+
+    .content h1 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      max-width: 80%;
+    }
+
+    .content p {
+      max-width: 93%;
+    }
+
+    button {
+      padding: 1.2em 3.6em;
+      color: var(--violet);
+      font-size: 1rem;
+      border: none;
+      border-radius: 2rem;
+      box-shadow: 0 0.5rem 1.3rem 0.3rem rgba(0, 0, 0, 0.2);
+      margin-top: 0.5rem;
+    }
+
+    .icon-container {
+      display: flex;
+      justify-content: flex-end;
+      gap: 2.5rem;
+    }
+
+    .icon-container>* {
+      font-size: 30px;
+      color: var(--white)
+    }
+
+    @media (max-width: 475px) {
+      .container {
+        max-width: 600px;
+      }
+
+      .hero>img {
+        width: 100%;
+        margin-top: 3rem;
+      }
+
+      .main {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+      }
+
+      .content h1,
+      .content p {
+        max-width: 100%;
+      }
+
+      button {
+        padding: 0.8rem 6rem;
+      }
+
+      .icon-container {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <header>
+      <!-- logo -->
+      <img alt="" src="./images/logo.svg">
+    </header>
+
+    <div class="wrapper">
+      <div class="main">
+        <div class="hero">
+          <img src="./images/illustration-mockups.svg" alt="">
+        </div>
+
+        <div class="content">
+          <h1>
+            Build The Community Your Fans Will Love
+          </h1>
+
+          <p>
+            Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
+            Create connections with your users as you engage in genuine discussion.
+          </p>
+
+          <button>
+            Register
+          </button>
+
+        </div>
+      </div>
+
+      <footer>
+        <!-- cho de icon -->
+        <div class="icon-container">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </footer>
+    </div>
+
+  </main>
+</body>
+
+</html>
